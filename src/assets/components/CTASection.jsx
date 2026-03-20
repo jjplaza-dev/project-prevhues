@@ -148,7 +148,7 @@ const CTASection = () => {
 
   return (
     <section 
-      className="relative h-[90vh] w-full flex items-center transition-colors duration-500 overflow-hidden border-t border-opacity-10"
+      className="relative h-[90vh] w-full flex items-center transition-colors duration-500 overflow-hidden border-t"
       style={{ backgroundColor: roleMap.bg, borderColor: roleMap.text }}
     >
       
@@ -196,7 +196,7 @@ const CTASection = () => {
       {/* --- SECTION COLOR SWAP TRIGGER --- */}
       <button
         onClick={() => setIsModalOpen(true)}
-        className="absolute bottom-6 right-6 z-30 flex items-center gap-2 px-3 py-2 rounded-lg shadow-lg hover:scale-105 transition-all bg-white border border-gray-200"
+        className="absolute bottom-20 right-6 z-30 flex items-center gap-2 px-3 py-2 rounded-lg shadow-lg hover:scale-105 transition-all bg-white border border-gray-200"
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
           <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />

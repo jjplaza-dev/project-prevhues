@@ -95,7 +95,7 @@ const Footer = () => {
   // --- DESIGN 3: Big Brand Statement ---
   const LayoutBigBrand = () => (
     <div className="w-full max-w-7xl mx-auto px-6 animate-fade-in">
-      <div className="flex flex-col md:flex-row justify-between items-end border-b pb-12 mb-12" style={{ borderColor: roleMap.text, borderOpacity: 0.1 }}>
+      <div className="flex flex-col md:flex-row justify-between items-end pb-12 mb-12">
         <h2 className="text-6xl md:text-[8rem] font-black tracking-tighter leading-none" style={{ color: roleMap.text }}>
           LET'S <br /> <span style={{ color: roleMap.highlight }}>BUILD.</span>
         </h2>
@@ -118,7 +118,7 @@ const Footer = () => {
 
   return (
     <section 
-      className="relative h-[90vh] w-full flex items-center transition-colors duration-500 overflow-hidden border-t"
+      className="relative h-[80vh] md:h-[60vh] w-full flex items-center transition-colors duration-500 overflow-hidden border-t"
       style={{ backgroundColor: roleMap.bg, borderColor: `rgba(0,0,0,0.1)` }}
     >
       <div className="w-full h-full flex items-center justify-center pt-8 pb-24 overflow-y-auto no-scrollbar">
@@ -141,7 +141,7 @@ const Footer = () => {
       </div>
 
       {/* --- SWAP TRIGGER --- */}
-      <button onClick={() => setIsModalOpen(true)} className="absolute bottom-6 right-6 z-30 flex items-center gap-2 px-3 py-2 rounded-lg shadow-lg hover:scale-105 transition-all bg-white border border-gray-200">
+      <button onClick={() => setIsModalOpen(true)} className="absolute bottom-20 right-6 z-30 flex items-center gap-2 px-3 py-2 rounded-lg shadow-lg hover:scale-105 transition-all bg-white border border-gray-200">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" /></svg>
         <span className="text-xs font-bold text-black">Swap Colors</span>
       </button>

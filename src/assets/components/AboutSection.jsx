@@ -123,7 +123,7 @@ const AboutSection = () => {
       <div className="mt-8 md:mt-12 flex items-center justify-center gap-4">
         <div className="w-10 h-10 md:w-12 md:h-12 rounded-full opacity-50" style={{ backgroundColor: roleMap.highlight }}></div>
         <div className="text-left">
-          <p className="font-bold text-sm md:text-base" style={{ color: roleMap.text }}>Alex Rivera</p>
+          <p className="font-bold text-sm md:text-base" style={{ color: roleMap.text }}>John Doe</p>
           <p className="opacity-60 text-xs md:text-sm" style={{ color: roleMap.text }}>Founder of PrevHues</p>
         </div>
       </div>
@@ -134,7 +134,7 @@ const AboutSection = () => {
 
   return (
     <section 
-      className="relative h-[90vh] w-full flex items-center transition-colors duration-500 overflow-hidden border-t border-opacity-10"
+      className="relative h-[90vh] w-full flex items-center transition-colors duration-500 overflow-hidden border-t"
       style={{ backgroundColor: roleMap.bg, borderColor: roleMap.text }}
     >
       
@@ -182,7 +182,7 @@ const AboutSection = () => {
       {/* --- SECTION COLOR SETTINGS TRIGGER --- */}
       <button
         onClick={() => setIsModalOpen(true)}
-        className="absolute bottom-6 right-6 z-30 flex items-center gap-2 px-3 py-2 rounded-lg shadow-lg hover:scale-105 transition-all"
+        className="absolute bottom-20 right-6 z-30 flex items-center gap-2 px-3 py-2 rounded-lg shadow-lg hover:scale-105 transition-all"
         style={{ backgroundColor: '#ffffff', color: '#000000', border: '1px solid #e5e7eb' }}
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
