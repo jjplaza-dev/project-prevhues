@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useColorPalette } from '../utils/useColorPalette';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -51,7 +52,7 @@ const Footer = () => {
         <ul className="space-y-4 text-sm font-medium" style={{ color: roleMap.text }}>
           <li className="opacity-70 hover:opacity-100 cursor-pointer transition-opacity">Previewer</li>
           <li className="opacity-70 hover:opacity-100 cursor-pointer transition-opacity">Color Tools</li>
-          <li className="opacity-70 hover:opacity-100 cursor-pointer transition-opacity">Templates</li>
+          <li className="opacity-70 hover:opacity-100 cursor-pointer transition-opacity"><Link to='/manager'>Templates</Link></li>
         </ul>
       </div>
       <div>
@@ -59,7 +60,7 @@ const Footer = () => {
         <ul className="space-y-4 text-sm font-medium" style={{ color: roleMap.text }}>
           <li className="opacity-70 hover:opacity-100 cursor-pointer transition-opacity">About Us</li>
           <li className="opacity-70 hover:opacity-100 cursor-pointer transition-opacity">Careers</li>
-          <li className="opacity-70 hover:opacity-100 cursor-pointer transition-opacity">Blog</li>
+          <li className="opacity-70 hover:opacity-100 cursor-pointer transition-opacity">Manager</li>
         </ul>
       </div>
       <div>
