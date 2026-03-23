@@ -52,7 +52,7 @@ const Footer = () => {
         <ul className="space-y-4 text-sm font-medium" style={{ color: roleMap.text }}>
           <li className="opacity-70 hover:opacity-100 cursor-pointer transition-opacity">Previewer</li>
           <li className="opacity-70 hover:opacity-100 cursor-pointer transition-opacity">Color Tools</li>
-          <li className="opacity-70 hover:opacity-100 cursor-pointer transition-opacity"><Link to='/manager'>Templates</Link></li>
+          <li className="opacity-70 hover:opacity-100 cursor-pointer transition-opacity">Templates</li>
         </ul>
       </div>
       <div>
@@ -60,7 +60,7 @@ const Footer = () => {
         <ul className="space-y-4 text-sm font-medium" style={{ color: roleMap.text }}>
           <li className="opacity-70 hover:opacity-100 cursor-pointer transition-opacity">About Us</li>
           <li className="opacity-70 hover:opacity-100 cursor-pointer transition-opacity">Careers</li>
-          <li className="opacity-70 hover:opacity-100 cursor-pointer transition-opacity">Manager</li>
+          <Link to='/manager' className="opacity-70 hover:opacity-100 cursor-pointer transition-opacity">Manager</Link>
         </ul>
       </div>
       <div>

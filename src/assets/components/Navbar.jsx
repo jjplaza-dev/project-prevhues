@@ -90,8 +90,19 @@ const Navbar = () => {
     <nav className="h-[10vh] bg-white border-b border-gray-200 px-6 py-3 flex items-center justify-between sticky top-0 z-50">
       <div className="flex items-center gap-4 sm:gap-8">
         {/* --- 4. DYNAMIC LOGO --- */}
-        <Link to="/" className="font-black text-xl tracking-tighter transition-colors duration-300 shadow-lg">
-          <span style={{ color: dominant }}>PREV</span>
+        <Link to="/" className="font-black text-xl tracking-tighter transition-colors duration-300 flex gap-[1px]">
+          <span 
+            style={{ 
+              color: dominant,
+              textShadow: `
+                -1px -1px 0 ${accent},  
+                1px -1px 0 ${accent},
+                -1px  1px 0 ${accent},
+                1px  1px 0 ${accent}`
+            }}
+          >
+            PREV
+          </span>
           <span style={{ color: accent }}>HUES</span>
         </Link>
         <div className="flex gap-2 sm:gap-4 text-sm font-medium text-gray-600">
